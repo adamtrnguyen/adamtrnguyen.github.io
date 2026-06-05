@@ -1,189 +1,224 @@
 cv:
-  name: Albert Einstein
-  label: Scientist
-  email: einstein@example.com
-  location: Princeton, NJ
+  name: Adam Nguyen
+  label: M.S. CS @ UMD (incoming) · Data-Centric AI Researcher
+  email: adamtruongnguyen@gmail.com
+  location: Blacksburg, VA → College Park, MD (Fall 2026)
   image: ""
-  summary: A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time
+  summary: >-
+    Incoming M.S. CS at the University of Maryland (Fall 2026) and recent
+    Virginia Tech B.S. CS graduate. Research at the ReDS Lab focuses on
+    data-centric AI: LLM evaluation, data curation, data valuation, and model
+    safety. Co-authored two published papers (EMNLP 2025 Main Conference and
+    the Amazon Nova AI Challenge proceedings) and the Curation-Bench preprint.
 
   social_networks:
-    - network: X
-      username: AlbertEinstein
     - network: GitHub
-      username: example
+      username: adamtrnguyen
     - network: LinkedIn
-      username: example
-
-  address:
-    street: 2712 Broadway St
-    city: San Francisco
-    region: California
-    postalCode: CA 94115
-    countryCode: US
+      username: adamtrnguyen
 
   sections:
     Education:
-      - institution: University of Zurich
-        location: Zurich, Switzerland
-        url: https://www.uzh.ch/
-        area: Physics
-        studyType: PhD
-        start_date: 1900
-        end_date: 1905
+      - institution: University of Maryland, College Park
+        location: College Park, MD
+        url: https://www.cs.umd.edu/
+        area: Computer Science (focus on Data-Centric AI)
+        studyType: M.S.
+        start_date: 2026-08
+        end_date: 2028-05
         score: ""
-        courses: "Theory of Relativity"
         highlights:
-          - Description 1.
-          - Description 2.
+          - Incoming Fall 2026.
 
-      - institution: Eidgenössische Technische Hochschule
-        location: Zurich, Switzerland
-        area: Physics
-        studyType: Federal teaching diploma
-        start_date: 1896
-        end_date: 1900
+      - institution: Virginia Tech
+        location: Blacksburg, VA
+        url: https://www.cs.vt.edu/
+        area: Computer Science
+        studyType: B.S.
+        start_date: 2022-08
+        end_date: 2026-05
+        score: GPA 3.91 / 4.00
+        courses: "Machine Learning, Deep Learning, Intro AI, Theoretical Statistics, Probability, Advanced Calculus, Data Structures & Algorithms, Computer Organization I & II, Computer Systems, Data Analytics"
         highlights:
-          - Description 1.
-          - Description 2.
+          - Barry Goldwater Scholarship Nominee (2025).
+          - Raytheon Fellowship, 1 of 20 students in the VT-Raytheon competitive industry-academic fellowship.
+          - Tyson Family Foundation Scholarship.
 
     Experience:
-      - company: Institute for Advanced Study, Princeton University
-        position: Professor of Theoretical Physics
-        location: Princeton University, NJ
-        start_date: 1933
-        end_date: 1955
-        summary: Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.
+      - company: Responsible Data Science Lab (ReDS), Virginia Tech
+        position: Undergraduate Researcher
+        location: Blacksburg, VA
+        url: https://reds-lab.github.io/
+        start_date: 2023-10
+        end_date: present
+        summary: >-
+          Research with Prof. Ruoxi Jia on data-centric AI. Contributed across
+          6 ML and LLM research projects (3 resulting in papers), spanning HPC
+          training infrastructure, agentic data curation, data valuation, and
+          LLM memorization and safety.
         highlights:
-          - Relativity
-          - Description 2.
+          - Built concurrent Python inference pipelines for 4+ LLMs, running experiments on the lab H100 cluster and Virginia Tech HPC.
+          - Engineered a distributed (Ray on Slurm) inference and training pipeline to sweep training and evaluation across many model configurations.
+          - Authored Slurp, a Slurm/Ray TUI and CLI for HPC job management, GPU monitoring, resource reporting, and Ray task tracking. Lifted experiment throughput from about 1 run per meeting to 30 to 90+ configurations per meeting.
+          - Built and maintained a PostgreSQL-backed research pipeline storing results, scaling data, and origin metadata for reproducible querying.
+          - Designed evaluation using LLM-as-judge scoring, ablations, clustering metrics, BM25 similarity, and perplexity-based proxies; contributed post-training (SFT) and inference experiments to the EMNLP 2025 paper.
+          - Co-authored Curation-Bench, where LLM coding agents iteratively curate data, fine-tune models, and revise against fixed train/eval feedback across 8 vision-language benchmarks.
+          - Primary systems administrator for the lab's compute infrastructure, coordinating with university HPC staff.
 
-      - company: California Institute of Technology
-        position: Visiting Professor
-        location: Pasadena, California, US
-        start_date: 1933
-        end_date: 1933
+      - company: Amazon Nova AI Challenge (HokieTokie Team)
+        position: Team Research Engineer
+        location: Seattle, WA — collaboration with Amazon AGI Science; VT PI Ruoxi Jia
+        url: https://www.amazon.science/amazon-nova-ai-challenge-trusted-ai
+        start_date: 2024-11
+        end_date: 2025-06
         highlights:
-          - Description 1.
-          - Description 2.
+          - Optimized evaluation pipelines via concurrency and async processing, cutting runtime from 2 hours to 20 minutes (6x).
+          - Managed AWS infrastructure on a $150K/month research budget across 8 months; built a shared-drive architecture that lifted team throughput 5x.
+          - Built an AWS Bedrock deployment pipeline that cut model deployment time from 2 hours to 15 minutes (8x).
+          - Built the SFT and DPO training environment for an internal 7B code model and generated adversarial training data to reduce unsafe-code generation and improve refusal of malicious requests; supported vLLM inference on Docker and Kubernetes (AWS p5/H100). Published in the Amazon Nova AI Challenge proceedings.
 
-      - company: Kaiser Wilhelm Institute for Physics
-        position: Director
-        location: Berlin, Germany
-        start_date: 1917
-        end_date: 1933
-
-      - company: Karl-Ferdinand University
-        position: Professor of Theoretical Physics
-        location: Prague, Czechoslovakia
-        start_date: 1911
-        end_date: 1917
-
-      - company: University of Zurich
-        position: Associate Professor of Theoretical Physics
-        location: Zurich, Switzerland
-        start_date: 1909
-        end_date: 1911
-
-    Volunteer:
-      - company: People's Climate March
-        position: Lead Organizer
-        location: Zurich, Switzerland
-        start_date: 2014-04-01
-        end_date: 2015-07-01
-        summary: Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.
+      - company: Raytheon Technologies
+        position: Software Engineering Intern
+        location: Richardson, TX
+        start_date: 2024-05
+        end_date: 2024-08
+        summary: >-
+          Selected as 1 of 20 students for the VT-Raytheon Fellowship. Worked
+          on an agile team of 10 developers on infrastructure tooling.
         highlights:
-          - "Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march."
-          - "Men of the year 2014 by Time magazine"
+          - Developed Ansible and Bash scripts to back up data across 10+ servers in Raytheon's infrastructure.
+          - Presented the infrastructure solution to a Raytheon VP in a 5-minute demo.
+          - Fellowship curriculum covered Linux, computer systems, containers, networking (OSI / IP / ports / routers / switches), vulnerability testing, hardware security, firewalls, IDS/IPS, web proxies, and email security.
 
-    Awards:
-      - title: Nobel Prize in Physics
-        authors:
-          - "Royal Swedish Academy of Sciences"
-        date: 1921-11-01
-        awarder: Royal Swedish Academy of Sciences
-        url: https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/
-        summary: The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'
-
-      - title: Max Planck Medal
-        authors:
-          - "German Physical Society"
-        date: 2029
-        awarder: German Physical Society
-        summary: Awarded for outstanding scientific achievement
+      - company: Virginia Tech Summer Start Program
+        position: Peer Mentor
+        location: Blacksburg, VA
+        start_date: 2023-06
+        end_date: 2023-08
+        highlights:
+          - Supported 15+ incoming first-generation engineering students with academic guidance, study strategies, and transition coaching.
+          - Ran GroupMe check-ins, one-on-one guidance, coursework and schedule support, and informal weekly community events.
 
     Publications:
-      - title: Zur Elektrodynamik bewegter Körper
+      - title: "Retracing the Past: LLMs Emit Training Data When They Get Lost"
         authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1905-06-30
-        url: https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies
-        summary: It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source.
+          - "Myeongseob Ko"
+          - "Nikhil Reddy Billa"
+          - "Adam Nguyen"
+          - "Charles Fleming"
+          - "Ming Jin"
+          - "Ruoxi Jia"
+        publisher: "EMNLP 2025, Main Conference"
+        releaseDate: 2025-11-01
+        summary: >-
+          We study a failure mode where large language models, prompted off
+          their training distribution, emit verbatim training data. The paper
+          characterizes when and why this happens and proposes a method that
+          induces and detects it. (Contributed post-training and inference.)
 
-      - title: Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt
+      - title: "Data is All You Need (Almost): Iterative Synthetic Instruction Tuning for Secure Code Generation"
         authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1905-03-18
-        url: https://de.wikisource.org/wiki/Über_einen_die_Erzeugung_und_Verwandlung_des_Lichtes_betreffenden_heuristischen_Gesichtspunkt
-        summary: In the second paper, he applied the quantum theory to light to explain the photoelectric effect. In particular, he used the idea of light quanta (photons) to explain experimental results, but stressed the importance of the experimental results. The importance of his work on the photoelectric effect earned him the Nobel Prize in Physics in 1921.
+          - "Yi Zeng"
+          - "Mahavir Dabas"
+          - "Tran Huynh"
+          - "Nikhil Reddy"
+          - "Adam Nguyen"
+          - "Sanchit Kabra"
+          - "Ruoxi Jia"
+        publisher: "1st Proceedings of the Amazon Nova AI Challenge (Trusted AI 2025)"
+        releaseDate: 2025-08-01
+        summary: >-
+          An end-to-end synthetic instruction-tuning pipeline (SFT + DPO) that
+          trains code-generation models to produce secure code and refuse
+          malicious requests, evaluated with Amazon CodeGuru and an adaptive
+          LLM judge.
 
-      - title: Die Grundlage der allgemeinen Relativitätstheorie
+      - title: "Can Generalist Agents Automate Data Curation?"
         authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1916-03-20
-        url: https://de.wikisource.org/wiki/Die_Grundlage_der_allgemeinen_Relativitätstheorie
-        summary: The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914).
+          - "Feiyang Kang"
+          - "Hanze Li"
+          - "Adam Nguyen"
+          - "Mahavir Dabas"
+          - "Jiaqi W. Ma"
+          - "Frederic Sala"
+          - "Dawn Song"
+          - "Ruoxi Jia"
+        publisher: "arXiv preprint (Curation-Bench)"
+        releaseDate: 2026-06-01
+        summary: >-
+          Curation-Bench: a benchmark where LLM coding agents iteratively
+          propose data-selection policies, fine-tune models, and revise against
+          fixed training and evaluation feedback across 8 vision-language
+          benchmarks.
+
+    Awards:
+      - title: Barry Goldwater Scholarship Nominee
+        authors:
+          - "Virginia Tech"
+        date: 2025
+        awarder: Virginia Tech
+        summary: Institutional nominee for the Barry Goldwater Scholarship, the premier undergraduate scholarship in the natural sciences, mathematics, and engineering in the United States.
+
+      - title: Raytheon Fellowship
+        authors:
+          - "Virginia Tech & Raytheon Technologies"
+        date: 2024
+        awarder: Virginia Tech & Raytheon Technologies
+        summary: 1 of 20 students selected for the competitive industry-academic fellowship combining cybersecurity coursework and a Raytheon summer internship.
+
+      - title: Tyson Family Foundation Scholarship
+        authors:
+          - "Tyson Family Foundation"
+        date: 2022
+        awarder: Tyson Family Foundation
+        summary: Merit scholarship awarded for undergraduate study at Virginia Tech.
 
     Skills:
-      - name: Physics
-        level: Master
-        icon: fa-solid fa-hashtag
-        keywords: "Quantum Mechanics, Quantum Computing, Quantum Information, Quantum Cryptography, Quantum Communication, Quantum Teleportation"
+      - name: Languages
+        level: Advanced
+        icon: fa-solid fa-code
+        keywords: "Python, SQL, C++, C, Java, Bash"
 
-    Languages:
-      - name: German
-        summary: "Native speaker"
+      - name: ML / Data
+        level: Advanced
+        icon: fa-solid fa-database
+        keywords: "PyTorch, scikit-learn, HuggingFace, Ray, PostgreSQL, Weights & Biases; SFT, DPO, pretraining, LLM-as-judge evaluation"
 
-      - name: English
-        summary: "Fluent"
+      - name: Systems / DevOps
+        level: Advanced
+        icon: fa-solid fa-server
+        keywords: "AWS (Bedrock, EC2, S3), Linux, Docker, Kubernetes, vLLM, CI/CD, Git, Slurm"
+
+      - name: Web
+        level: Intermediate
+        icon: fa-solid fa-globe
+        keywords: "React, HTML, CSS, JavaScript"
+
+      - name: Tools
+        level: Advanced
+        icon: fa-solid fa-terminal
+        keywords: "Neovim, Tmux, Alacritty, Claude Code, Codex"
 
     Interests:
-      - name: Physics
-        icon: fa-solid fa-tag
-        keywords: "Quantum Mechanics, Quantum Computing, Quantum Information, Quantum Cryptography, Quantum Communication, Quantum Teleportation"
+      - name: Research
+        icon: fa-solid fa-flask
+        keywords: "Data-centric AI, LLM evaluation, data curation, data valuation, model safety, scalable evaluation infrastructure"
 
-    Certificates:
-      - name: Machine Learning
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-location-dot
-
-      - name: Quantum Computing
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-tag
-
-      - name: Quantum Information
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-envelope
+      - name: Personal
+        icon: fa-solid fa-palette
+        keywords: "Digital portrait painting, poster & graphic design"
 
     Projects:
-      - name: Quantum Computing
-        summary: Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.
+      - name: Slurp — Slurm/Ray TUI for HPC job management
+        summary: >-
+          A TUI and CLI for managing Slurm and Ray jobs on a university HPC.
+          Provides GPU monitoring, resource reporting, worker submission, job
+          history, and Ray task tracking. Built to lift the ReDS Lab's
+          experiment throughput from about 1 run per group meeting to 30 to
+          90+ configurations.
         highlights:
-          - Quantum Teleportation
-          - Quantum Cryptography
-        start_date: 2018-01-01
-        end_date: 2018-01-01
-
-    References:
-      - name: Professor John Doe
-        icon: fa-solid fa-laptop
-        reference: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit.
-
-      - name: Professor Jane Smith
-        icon: fa-solid fa-thumbtack
-        reference: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit.
+          - Slurm + Ray integration with live GPU/queue views
+          - Job submission and history tracking
+          - Reproducible experiment management
+        start_date: 2024-09
+        end_date: present
