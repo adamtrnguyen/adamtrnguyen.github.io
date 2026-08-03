@@ -2,12 +2,12 @@ cv:
   name: Adam Nguyen
   label: M.S. CS @ UMD (incoming) · Data-Centric AI Researcher
   email: adamtruongnguyen@gmail.com
-  location: Blacksburg, VA → College Park, MD (Fall 2026)
+  location: College Park, MD
   image: ""
   summary: >-
     Incoming M.S. CS at the University of Maryland (Fall 2026) and recent
     Virginia Tech B.S. CS graduate. Research at the ReDS Lab focuses on
-    data-centric AI: LLM evaluation, data curation, data valuation, and model
+    data-centric AI: LLM evaluation, data curation, data selection, and model
     safety. Co-authored two published papers (EMNLP 2025 Main Conference and
     the Amazon Nova AI Challenge proceedings) and the Curation-Bench preprint.
 
@@ -50,11 +50,11 @@ cv:
         location: Blacksburg, VA
         url: https://reds-lab.github.io/
         start_date: 2023-10
-        end_date: present
+        end_date: 2026-06
         summary: >-
           Research with Prof. Ruoxi Jia on data-centric AI. Contributed across
           6 ML and LLM research projects (3 resulting in papers), spanning HPC
-          training infrastructure, agentic data curation, data valuation, and
+          training infrastructure, agentic data curation, data selection, and
           LLM memorization and safety.
         highlights:
           - Built concurrent Python inference pipelines for 4+ LLMs, running experiments on the lab H100 cluster and Virginia Tech HPC.
@@ -67,7 +67,7 @@ cv:
 
       - company: Amazon Nova AI Challenge (HokieTokie Team)
         position: Team Research Engineer
-        location: Seattle, WA — collaboration with Amazon AGI Science; VT PI Ruoxi Jia
+        location: Seattle, WA — collaboration with Amazon AGI; Ruoxi Jia, VT PI
         url: https://www.amazon.science/amazon-nova-ai-challenge-trusted-ai
         start_date: 2024-11
         end_date: 2025-06
@@ -75,7 +75,7 @@ cv:
           - Optimized evaluation pipelines via concurrency and async processing, cutting runtime from 2 hours to 20 minutes (6x).
           - Managed AWS infrastructure on a $150K/month research budget across 8 months; built a shared-drive architecture that lifted team throughput 5x.
           - Built an AWS Bedrock deployment pipeline that cut model deployment time from 2 hours to 15 minutes (8x).
-          - Built the SFT and DPO training environment for an internal 7B code model and generated adversarial training data to reduce unsafe-code generation and improve refusal of malicious requests; supported vLLM inference on Docker and Kubernetes (AWS p5/H100). Published in the Amazon Nova AI Challenge proceedings.
+          - Built the SFT and DPO training environment for an internal 8B code model and generated adversarial training data to reduce unsafe-code generation and improve refusal of malicious requests; supported vLLM inference on Docker and Kubernetes (AWS p5/H100). Published in the Amazon Nova AI Challenge proceedings.
 
       - company: Raytheon Technologies
         position: Software Engineering Intern
@@ -202,7 +202,7 @@ cv:
     Interests:
       - name: Research
         icon: fa-solid fa-flask
-        keywords: "Data-centric AI, LLM evaluation, data curation, data valuation, model safety, scalable evaluation infrastructure"
+        keywords: "Data-centric AI, LLM evaluation, data curation, data selection, model safety, scalable evaluation infrastructure"
 
       - name: Personal
         icon: fa-solid fa-palette
