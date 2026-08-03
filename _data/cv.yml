@@ -1,11 +1,11 @@
 cv:
   name: Adam Nguyen
-  label: M.S. CS @ UMD (incoming) · Data-Centric AI Researcher
+  label: M.S. CS @ UMD · Data-Centric AI Researcher
   email: adamtruongnguyen@gmail.com
   location: College Park, MD
   image: ""
   summary: >-
-    Incoming M.S. CS at the University of Maryland (Fall 2026) and recent
+    M.S. CS student at the University of Maryland (Fall 2026) and recent
     Virginia Tech B.S. CS graduate. Research at the ReDS Lab focuses on
     data-centric AI: LLM evaluation, data curation, data selection, and model
     safety. Co-authored two published papers (EMNLP 2025 Main Conference and
@@ -28,7 +28,7 @@ cv:
         end_date: 2028-05
         score: ""
         highlights:
-          - Incoming Fall 2026.
+          - Starting Fall 2026.
 
       - institution: Virginia Tech
         location: Blacksburg, VA

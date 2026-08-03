@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: M.S. CS @ <a href='https://www.cs.umd.edu/'>UMD</a> (Fall 2026, incoming). B.S. CS @ Virginia Tech, 2026. <a href='https://reds-lab.github.io/'>ReDS Lab</a>.
+subtitle: M.S. CS @ <a href='https://www.cs.umd.edu/'>UMD</a> (Fall 2026). B.S. CS @ Virginia Tech, 2026. <a href='https://reds-lab.github.io/'>ReDS Lab</a>.
 
 profile:
   align: right
@@ -22,7 +22,7 @@ latest_posts:
   enabled: false
 ---
 
-I'm an incoming M.S. CS student at the [University of Maryland](https://www.cs.umd.edu/), starting Fall 2026. I just graduated from Virginia Tech with a B.S. in Computer Science.
+I'm an M.S. CS student at the [University of Maryland](https://www.cs.umd.edu/), starting Fall 2026. I just graduated from Virginia Tech with a B.S. in Computer Science.
 
 My work spans **data-centric AI**: LLM evaluation, data curation, data selection, and model memorization and safety. I worked with [Prof. Ruoxi Jia](https://ruoxijia.info/) at the [ReDS Lab](https://reds-lab.github.io/). Our paper *Retracing the Past: LLMs Emit Training Data When They Get Lost* appeared at EMNLP 2025, and I'm a co-author on *Curation-Bench* (Can Generalist Agents Automate Data Curation?), a benchmark for agentic data curation.
 
