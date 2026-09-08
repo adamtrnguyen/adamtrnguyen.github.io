@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Paper *Retracing the Past: LLMs Emit Training Data When They Get Lost* accepted at **EMNLP 2025 Main Conference**.
+Paper _Retracing the Past: LLMs Emit Training Data When They Get Lost_ accepted at **EMNLP 2025 Main Conference**.

@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-New preprint: *Can Generalist Agents Automate Data Curation?* (**Curation-Bench**), a benchmark for agentic data curation, is on arXiv.
+New preprint: _Can Generalist Agents Automate Data Curation?_ (**Curation-Bench**), a benchmark for agentic data curation, is on arXiv.
