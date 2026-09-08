@@ -16,13 +16,6 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/publications/";
           },
-        },{id: "nav-studio",
-          title: "studio",
-          description: "Still life paintings and other artwork.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/studio/";
-          },
         },{id: "nav-cv",
           title: "CV",
           description: "One-page PDF version available via the download button above.",
