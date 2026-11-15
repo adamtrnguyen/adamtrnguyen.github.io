@@ -1,0 +1,224 @@
+cv:
+  name: Adam Nguyen
+  label: M.S. Computer Science · LLM agents · LLM evaluation · data-centric ML
+  email: adamtruongnguyen@gmail.com
+  location: College Park, MD
+  image: ""
+  summary: >-
+    M.S. Computer Science student at the University of Maryland and Virginia
+    Tech B.S. CS graduate. Research interest in evaluation and reliable
+    systems: empirical evaluation and measurement for single-agent and
+    multi-agent systems. Co-author of two EMNLP main conference papers (2025,
+    2026) and a paper in the Amazon Nova AI Challenge proceedings. Incoming AI
+    Agentic/ML System Co-op at AMD (January to August 2027).
+
+  social_networks:
+    - network: GitHub
+      username: adamtrnguyen
+    - network: LinkedIn
+      username: adamtrnguyen
+
+  sections:
+    Education:
+      - institution: University of Maryland, College Park
+        location: College Park, MD
+        url: https://www.cs.umd.edu/
+        area: Computer Science
+        studyType: M.S.
+        start_date: 2026-08
+        end_date: 2028-05
+        score: ""
+        highlights:
+          - "Focus: Agentic AI & Multi-Agent Systems."
+
+      - institution: Virginia Tech
+        location: Blacksburg, VA
+        url: https://www.cs.vt.edu/
+        area: Computer Science
+        studyType: B.S.
+        start_date: 2022-08
+        end_date: 2026-05
+        score: GPA 3.90 / 4.00
+        courses: "Machine Learning, Deep Learning, Intro AI, Theoretical Statistics, Probability, Advanced Calculus, Data Structures & Algorithms, Computer Organization I & II, Computer Systems, Data Analytics"
+        highlights:
+          - Summa Cum Laude.
+          - Barry Goldwater Scholarship Nominee (2025).
+          - Raytheon Fellowship, 1 of 20 students in the VT-Raytheon competitive industry-academic fellowship.
+          - Tyson Family Foundation Scholarship.
+
+    Experience:
+      - company: Responsible Data Science Lab (ReDS), Virginia Tech
+        position: Undergraduate LLM Researcher
+        location: Blacksburg, VA
+        url: https://reds-lab.github.io/
+        start_date: 2023-10
+        end_date: 2026-06
+        summary: >-
+          Research with Prof. Ruoxi Jia. Contributed across 6 ML and LLM
+          research projects, 3 resulting in papers, spanning agentic data
+          curation, data selection, and LLM memorization and safety.
+        highlights:
+          - "Curation-Bench (EMNLP 2026): benchmark of whether generalist coding agents can curate training data, with training and evaluation held fixed so that the data is the only thing that changes. Found that agents could match published data-selection methods while mostly making small, weakly justified changes to the data."
+          - Built a curation agent on AutoGen, then ran Claude Code and Codex as a baseline. Saw both invent quality formulas without seeking evidence, but proposed rerunning them more freely because the fixed pipeline might have constrained them.
+          - Reviewed transcripts from three custom agent designs and saw agents act against their own correct conclusions and damage datasets. Redesigned the agent as a planner and executor with separate phases for hypotheses, exploration, and implementation.
+          - Retired the custom harnesses on advisor guidance when the research question shifted to whether existing agent harnesses could curate data.
+          - Co-developed the benchmark's Docker agent loop and data-access environment, and scaled agent runs across multiple GPUs with Ray on Virginia Tech's HPC cluster to produce the paper's evaluations.
+          - "Retracing the Past (EMNLP 2025): testing whether confusing an LLM makes it emit memorized training data. Prompts optimized to confuse Llama 2 70B drew out exact training text for 22.2% of prompts, against 10.8% for random prompts."
+          - Reproduced the prior repeat-word extraction attack on Llama 2 70B, then tested it across the model's vocabulary and tracked token probabilities as the model broke away from repeating.
+          - Fine-tuned aligned LLMs with LoRA on 1,998 questions paired with unrelated answers, to undo the alignment that keeps them from emitting memorized training data.
+          - Built a pipeline to download, tokenize and index RedPajama, an open stand-in for Llama's unknown training data, with suffix arrays in C++, so model outputs could be searched for memorized text. Later switched to Infini-gram's hosted index.
+
+      - company: Amazon Nova AI Challenge (HokieTokie Team)
+        position: Team Research Engineer
+        location: Seattle, WA — collaboration with Amazon AGI; Ruoxi Jia, VT PI
+        url: https://www.amazon.science/amazon-nova-ai-challenge-trusted-ai
+        start_date: 2024-11
+        end_date: 2025-06
+        highlights:
+          - Co-led Tournament 3's two-model fusion after refusal models underperformed on secure-code tests; a refusal expert screened requests before a separate model generated code.
+          - Built the team's AWS Lambda handler and served vLLM inference behind it from Docker containers on EC2 p5 H100 instances, then moved deployment to an Amazon S3 bucket and Amazon Bedrock.
+          - Cut evaluation runtime 6×, from 2 hours to 20 minutes, via concurrency and async, and built an AWS Bedrock deployment pipeline that cut model deployment 8×, from 2 hours to 15 minutes.
+          - Curated adversarial multi-turn training data with Claude 3.7 Sonnet for the team's 45,239-example Python-vulnerability set, used in the SFT and DPO runs on its internal 8B code model.
+
+      - company: Raytheon Technologies
+        position: Software Engineering Intern
+        location: Richardson, TX
+        start_date: 2024-05
+        end_date: 2024-08
+        summary: >-
+          VT & Raytheon Fellowship, 1 of 20 selected.
+        highlights:
+          - Built Ansible and Bash automation to unify backups across 10+ servers, working on a 10-developer agile team.
+          - Presented the infrastructure solution to a Raytheon VP in a 5-minute demo.
+          - Fellowship curriculum covered Linux, computer systems, containers, networking (OSI / IP / ports / routers / switches), vulnerability testing, hardware security, firewalls, IDS/IPS, web proxies, and email security.
+
+      - company: Virginia Tech Summer Start Program
+        position: Peer Mentor
+        location: Blacksburg, VA
+        start_date: 2023-06
+        end_date: 2023-08
+        highlights:
+          - Supported 15+ incoming first-generation engineering students with academic guidance, study strategies, and transition coaching.
+          - Ran GroupMe check-ins, one-on-one guidance, coursework and schedule support, and informal weekly community events.
+
+    Publications:
+      - title: "Can Generalist Agents Automate Data Curation?"
+        authors:
+          - "Feiyang Kang"
+          - "Hanze Li"
+          - "Adam Nguyen"
+          - "Mahavir Dabas"
+          - "Jiaqi W. Ma"
+          - "Frederic Sala"
+          - "Dawn Song"
+          - "Ruoxi Jia"
+        publisher: "EMNLP 2026, Main Conference"
+        releaseDate: 2026-06-01
+        summary: >-
+          Curation-Bench: a benchmark where LLM coding agents iteratively
+          propose data-selection policies, fine-tune models, and revise against
+          fixed training and evaluation feedback across 8 vision-language
+          benchmarks.
+
+      - title: "Retracing the Past: LLMs Emit Training Data When They Get Lost"
+        authors:
+          - "Myeongseob Ko"
+          - "Nikhil Reddy Billa"
+          - "Adam Nguyen"
+          - "Charles Fleming"
+          - "Ming Jin"
+          - "Ruoxi Jia"
+        publisher: "EMNLP 2025, Main Conference"
+        releaseDate: 2025-11-01
+        summary: >-
+          We study a failure mode where large language models, prompted off
+          their training distribution, emit verbatim training data. The paper
+          characterizes when and why this happens and proposes a method that
+          induces and detects it. (Contributed post-training and inference.)
+
+      - title: "Data is All You Need (Almost): Iterative Synthetic Instruction Tuning for Secure Code Generation"
+        authors:
+          - "Yi Zeng"
+          - "Mahavir Dabas"
+          - "Tran Huynh"
+          - "Nikhil Reddy"
+          - "Adam Nguyen"
+          - "Sanchit Kabra"
+          - "Ruoxi Jia"
+        publisher: "1st Proceedings of the Amazon Nova AI Challenge (Trusted AI 2025)"
+        releaseDate: 2025-08-01
+        summary: >-
+          An end-to-end synthetic instruction-tuning pipeline (SFT + DPO) that
+          trains code-generation models to produce secure code and refuse
+          malicious requests, evaluated with Amazon CodeGuru and an adaptive
+          LLM judge.
+
+    Awards:
+      - title: Barry Goldwater Scholarship Nominee
+        authors:
+          - "Virginia Tech"
+        date: 2025
+        awarder: Virginia Tech
+        summary: Institutional nominee for the Barry Goldwater Scholarship, the premier undergraduate scholarship in the natural sciences, mathematics, and engineering in the United States.
+
+      - title: Raytheon Fellowship
+        authors:
+          - "Virginia Tech & Raytheon Technologies"
+        date: 2024
+        awarder: Virginia Tech & Raytheon Technologies
+        summary: 1 of 20 students selected for the competitive industry-academic fellowship combining cybersecurity coursework and a Raytheon summer internship.
+
+      - title: Tyson Family Foundation Scholarship
+        authors:
+          - "Tyson Family Foundation"
+        date: 2022
+        awarder: Tyson Family Foundation
+        summary: Merit scholarship awarded for undergraduate study at Virginia Tech.
+
+    Skills:
+      - name: Research Methods
+        level: Advanced
+        icon: fa-solid fa-flask
+        keywords: "experimental design with random baselines, negative controls, repeated measures and ablation studies; selection stability under subsampling; experiment tracking with Weights & Biases and PostgreSQL"
+
+      - name: ML & LLM
+        level: Advanced
+        icon: fa-solid fa-database
+        keywords: "PyTorch, HuggingFace Transformers and Datasets, SFT, DPO, pretraining, vLLM, distributed training and inference with Ray on Slurm and DeepSpeed, scikit-learn"
+
+      - name: Cloud & Languages
+        level: Advanced
+        icon: fa-solid fa-server
+        keywords: "AWS Bedrock, EC2, and S3, Linux, Git, Weights & Biases; Python, SQL, C++, Bash; Claude Code, Codex"
+
+      - name: Web
+        level: Intermediate
+        icon: fa-solid fa-globe
+        keywords: "React, HTML, CSS, JavaScript"
+
+      - name: Tools
+        level: Advanced
+        icon: fa-solid fa-terminal
+        keywords: "Neovim, Tmux, Alacritty, Claude Code, Codex"
+
+    Interests:
+      - name: Research
+        icon: fa-solid fa-flask
+        keywords: "Evaluation and reliable systems; empirical evaluation and measurement for single-agent and multi-agent systems"
+
+      - name: Personal
+        icon: fa-solid fa-palette
+        keywords: "Homelab (Mac Studio, Mac mini, UGREEN NAS), building a RAG system, reading philosophy, digital portrait painting, poster & graphic design"
+
+    Projects:
+      - name: omni-rag — Agentic RAG MCP system over a corpus of papers and books
+        highlights:
+          - Built search over 1,600+ textbooks for coding agents, returning each passage with its book and page through an MCP server. Compared embedding and reranking models on a fixed set of test queries to pick the configuration.
+
+      - name: Slurp — HPC Slurm software tooling for GPU scheduling and uv & Ray-compatible scaling
+        highlights:
+          - Built a tool that makes a university Slurm cluster usable as one Ray cluster, decoupling its generic uv environment from the uv environments of research projects running on it.
+          - Started it when 10 students shared the lab's 12 GPUs and the lab was not using the university cluster. It makes Slurm's scheduling queue visible for planning workloads, claims GPUs as they free up, and starts Ray workers on them.
+          - Scaled fine-tuning experiments from about one run to 30–90+ SFT trials per meeting, with up to 241 concurrent Ray tasks across 27 GPUs, then shared the tool with labmates.
+        start_date: 2024-09
+        end_date: present
